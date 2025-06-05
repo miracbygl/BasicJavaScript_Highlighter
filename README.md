@@ -7,6 +7,9 @@ Bu proje, JavaScript benzeri bir dil için gerçek zamanlı sözdizimi renklendi
 
 ## Projeye Ait Detaylı rapora bu linkten ulaşabilirsiniz
 [DETAYLI MAKELE](https://medium.com/@bayoglumirac7/basic-javascript-syntax-online-lexical-ve-syntax-analyzer-442ab41f34a0)
+
+## Projeyi Denemek İçin Linke Tıklayın
+[Basic JavaScript]( https://miracbygl.github.io/BasicJavaScript_Highlighter/)
 ## Özellikler
 - ✨ Gerçek zamanlı sözdizimi renklendirme
 - 🔍 Anlık hata tespiti ve raporlama
