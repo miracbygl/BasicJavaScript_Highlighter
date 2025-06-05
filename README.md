@@ -1,6 +1,6 @@
 # Basic JavaScript syntax -Online Lexical ve Syntax Analyzer
 
-![Ekran Görüntüsü](img1.PNG)
+![Ekran Görüntüsü](img/img1.PNG)
 
 ## Proje Özeti
 Bu proje, JavaScript benzeri bir dil için gerçek zamanlı sözdizimi renklendirici ve parser uygulamasıdır. Program, yazılan kodun sözdizimini analiz eder, hataları tespit eder ve kod bloklarını renklendirir.
