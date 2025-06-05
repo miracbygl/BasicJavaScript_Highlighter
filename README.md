@@ -87,14 +87,7 @@ factor      := NUMBER | IDENTIFIER | '(' expression ')'
 
  ### Detaylı hata raporlama ve satır bazlı geri bildirim
  ![Ekran Görüntüsü](img/img4.PNG)
-
-
-## Kullanılan Teknolojiler
-
-- ✅HTML
-- ✅JavaScript
-- ✅CSS
-
+ 
  ## Hata Tespiti
  
 Program aşağıdaki hata türlerini tespit edebilir:
@@ -104,4 +97,12 @@ Program aşağıdaki hata türlerini tespit edebilir:
 - Desteklenmeyen anahtar kelimeler
 - Eksik noktalı virgülle
 
+
+## Kullanılan Teknolojiler
+
+- ✅HTML
+- ✅JavaScript
+- ✅CSS
+
+ 
 
