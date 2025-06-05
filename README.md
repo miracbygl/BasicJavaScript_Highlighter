@@ -69,9 +69,10 @@ factor      := NUMBER | IDENTIFIER | '(' expression ')'
 
 
 ## Kullanılan Teknolojiler
-✅HTML
-✅JavaScript
-✅CSS
+
+- ✅HTML
+- ✅JavaScript
+- ✅CSS
 
  ## Hata Tespiti
 Program aşağıdaki hata türlerini tespit edebilir:
