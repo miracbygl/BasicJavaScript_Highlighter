@@ -1,5 +1,7 @@
 # Basic JavaScript syntax -Online Lexical ve Syntax Analyzer
 
+![Ekran Görüntüsü](img1.PNG)
+
 ## Proje Özeti
 Bu proje, JavaScript benzeri bir dil için gerçek zamanlı sözdizimi renklendirici ve parser uygulamasıdır. Program, yazılan kodun sözdizimini analiz eder, hataları tespit eder ve kod bloklarını renklendirir.
 
@@ -13,8 +15,8 @@ Bu proje, JavaScript benzeri bir dil için gerçek zamanlı sözdizimi renklendi
 ## Teknik Detaylar
 
 ### Lexical Analysis
-- State Diagram & Program Implementation yaklaşımı
-- Regular Expressions kullanımı
+- State Diagram yaklaşımı
+- Regular Expressions 
 - Token tipleri:
   - Keywords (if, else, while, var, vb.)
   - Identifiers
@@ -22,11 +24,11 @@ Bu proje, JavaScript benzeri bir dil için gerçek zamanlı sözdizimi renklendi
   - Operators
   - Punctuation
   - Comments
-  - Whitespace
+  - Whitespace(Boşluklar)
   - Strings
 
 ### Parser
-- Top-Down Recursive Descent Parser
+- Top-Down  Parser
 - Desteklenen yapılar:
   - If-else statements
   - While loops
