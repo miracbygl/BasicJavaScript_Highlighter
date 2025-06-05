@@ -41,8 +41,16 @@ Bu proje, JavaScript benzeri bir dil için gerçek zamanlı sözdizimi renklendi
   - Function calls
   - Expressions
   - Comments
-
-### Formal Grammar
+## 1. Token Yapısı
+```bnf
+DIGIT       := [0-9]           # Sayısal karakterler
+LETTER      := [a-zA-Z]        # Alfabetik karakterler
+IDENTIFIER  := LETTER (LETTER | DIGIT)*  # Değişken/fonksiyon isimleri
+NUMBER      := DIGIT+ ('.' DIGIT+)?      # Tam sayı veya ondalık sayı
+OPERATOR    := '+' | '-' | '*' | '/' | '=' | '>' | '<' | '>=' | '<=' | '==' | '!='
+KEYWORD     := 'if' | 'else' | 'while' | 'for' | 'function' | 'var' | 'return'
+```
+## 2. Grammar
 ```bnf
 program     := statement*
 statement   := ifStmt | whileStmt | assignmentStmt | functionCall
