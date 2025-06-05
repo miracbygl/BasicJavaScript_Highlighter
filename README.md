@@ -55,13 +55,15 @@ factor      := NUMBER | IDENTIFIER | '(' expression ')'
 ```
 
 ### Örnek Kullanım
- Yorum satırı desteği
+
+### Yorum satırı desteği
+
  ![Ekran Görüntüsü](img/img3.PNG)
 
- Farklı operatör ve iç içe yapı desteği
+ ### Farklı operatör ve iç içe yapı desteği
 
  ![Ekran Görüntüsü](img/img2.PNG)
 
- Detaylı hata raporlama ve satır bazlı geri bildirim
+ ### Detaylı hata raporlama ve satır bazlı geri bildirim
  ![Ekran Görüntüsü](img/img4.PNG)
 
