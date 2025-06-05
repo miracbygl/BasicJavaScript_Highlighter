@@ -6,7 +6,7 @@
 Bu proje, JavaScript benzeri bir dil için gerçek zamanlı sözdizimi renklendirici ve parser uygulamasıdır. Program, yazılan kodun sözdizimini analiz eder, hataları tespit eder ve kod bloklarını renklendirir.
 
 ## Projeye Ait Detaylı rapora bu linkten ulaşabilirsiniz
-[Medium Makelesi](https://medium.com/@bayoglumirac7/basic-javascript-syntax-online-lexical-ve-syntax-analyzer-442ab41f34a0)
+[Medium Makalesi](https://medium.com/@bayoglumirac7/basic-javascript-syntax-online-lexical-ve-syntax-analyzer-442ab41f34a0)
 
 ## Projeyi Denemek İçin Linke Tıklayın
 [Basic JavaScript]( https://miracbygl.github.io/BasicJavaScript_Highlighter/)
