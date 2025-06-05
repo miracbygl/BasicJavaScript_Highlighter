@@ -53,8 +53,21 @@ expression  := term (('+' | '-') term)*
 term        := factor (('*' | '/') factor)*
 factor      := NUMBER | IDENTIFIER | '(' expression ')'
 ```
+## 🎨 Token Renkleri
 
-### Örnek Kullanım
+| Token Türü         | Açıklama                   | Renk Adı        | Ek Notlar           |
+|--------------------|----------------------------|------------------|----------------------|
+| `KEYWORD`          | Anahtar kelimeler          | Mavi             | —                    |
+| `STRING`           | Metin sabitleri            | Açık Kahverengi  | —                    |
+| `COMMENT`          | Yorum satırları            | Yeşil            | *İtalik*             |
+| `NUMBER`           | Sayısal ifadeler           | Açık Yeşil       | —                    |
+| `OPERATOR`         | Operatörler                | Pembe            | —                    |
+| `IDENTIFIER`       | Değişken isimleri          | Açık Mavi        | —                    |
+| `FUNCTION_CALL`    | Fonksiyon çağrıları        | Sarı             | —                    |
+| `DELIMITER`        | Noktalama işaretleri       | Turuncu          | —                    |
+
+
+## Örnek Kullanım
 
 ### Yorum satırı desteği
 
@@ -75,10 +88,12 @@ factor      := NUMBER | IDENTIFIER | '(' expression ')'
 - ✅CSS
 
  ## Hata Tespiti
+ 
 Program aşağıdaki hata türlerini tespit edebilir:
 - Sözdizimi hataları
 - Eksik parantezler
 - Geçersiz ifadeler
 - Desteklenmeyen anahtar kelimeler
 - Eksik noktalı virgülle
+
 
