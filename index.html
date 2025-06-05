@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Basic JavaScript IDE</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="ide-container">
+        <div class="ide-header">
+            <div class="logo">
+               Basic JavaScript Online IDE
+            </div>
+            <div class="toolbar">
+                <button class="btn" id="newFile">New</button>
+                <button class="btn" id="saveFile">Save</button>
+                <button class="btn" id="clearCode">Clear</button>
+                <button class="btn primary" id="runCode">Run</button>
+            </div>
+        </div>
+
+        <div class="ide-main">
+            <div class="editor-section">
+                <div class="file-tab">
+                    <span class="file-name">main.js</span>
+                    <span class="close-tab">×</span>
+                </div>
+                <textarea id="codeInput" spellcheck="false" 
+                          placeholder="Kodlarınızı buraya yazınız..."></textarea>
+            </div>
+
+            <div class="output-section">
+                <div class="output-header">
+                    <span>Output</span>
+                    <button class="btn small" id="clearOutput">Clear</button>
+                </div>
+                <pre id="highlightedOutput"><code></code></pre>
+                <div id="parseResult"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

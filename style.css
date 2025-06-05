@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: #1e1e1e;
+    color: #d4d4d4;
+    height: 100vh;
+}
+
+.ide-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.ide-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2d2d2d;
+    padding: 8px 16px;
+    border-bottom: 1px solid #404040;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #569cd6;
+}
+
+
+
+.toolbar {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    background: #333333;
+    color: #d4d4d4;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background: #404040;
+}
+
+.btn.primary {
+    background: #0e639c;
+    color: white;
+}
+
+.btn.primary:hover {
+    background: #1177bb;
+}
+
+.btn.small {
+    padding: 4px 8px;
+}
+
+.ide-main {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.editor-section {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    border-right: 1px solid #404040;
+}
+
+.file-tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background: #252526;
+    border-bottom: 1px solid #404040;
+}
+
+.file-name {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.file-name::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23d4d4d4"><path d="M13 9h5.5L13 3.5V9M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2m5 2H6v16h12V9h-7V4z"/></svg>') no-repeat center;
+}
+
+#codeInput {
+    flex: 1;
+    padding: 16px;
+    background: #1e1e1e;
+    color: #d4d4d4;
+    border: none;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    resize: none;
+    outline: none;
+}
+
+.output-section {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background: #1e1e1e;
+}
+
+.output-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background: #252526;
+    border-bottom: 1px solid #404040;
+    font-weight: 500;
+}
+
+#highlightedOutput {
+    flex: 1;
+    margin: 0;
+    padding: 16px;
+    overflow: auto;
+}
+
+
+
+
+.keyword { color: #569cd6; }
+.string { color: #ce9178; }
+.comment { color: #6a9955; font-style: italic; }
+.number { color: #b5cea8; }
+.operator { color: hsl(320, 96%, 45%); }
+.identifier { color: #9cdcfe; }
+.functionCall { color: #dcdcaa; }
+.noktalama { color: hsl(44, 86%, 48%); }
+
+
+#parseResult {
+    padding: 16px;
+    border-radius: 8px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 14px;
+}
+
+.error {
+    background: #351818;
+    border-left: 4px solid #f14c4c;
+    padding: 16px;
+    margin-top: 8px;
+    border-radius: 4px;
+}
+
+.error-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.error-type {
+    color: #f14c4c;
+    font-weight: bold;
+}
+
+.error-location {
+    color: #d16969;
+}
+
+.error-message {
+    color: #d16969;
+    margin-bottom: 12px;
+}
+
+.error-code {
+    background: #1e1e1e;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.error-pointer {
+    color: #f14c4c;
+}
+
+.success {
+    background: #1e3323;
+    border-left: 4px solid #4ec9b0;
+    padding: 16px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.success-icon {
+    color: #4ec9b0;
+}
+
+.success-message {
+    color: #4ec9b0;
+}
+
+
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #424242;
+    border: 3px solid #1e1e1e;
+    border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4f4f4f;
+}
+.line {
+    display: flex;
+    min-height: 1.5em;
+}
+
+.line-number {
+    width: 40px;
+    text-align: right;
+    padding-right: 8px;
+    margin-right: 8px;
+    color: #858585;
+    border-right: 1px solid #404040;
+    user-select: none;
+}
+
+.line-content {
+    flex: 1;
+    white-space: pre;
+}
