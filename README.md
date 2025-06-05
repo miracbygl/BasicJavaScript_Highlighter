@@ -67,3 +67,11 @@ factor      := NUMBER | IDENTIFIER | '(' expression ')'
  ### Detaylı hata raporlama ve satır bazlı geri bildirim
  ![Ekran Görüntüsü](img/img4.PNG)
 
+ ## Hata Tespiti
+Program aşağıdaki hata türlerini tespit edebilir:
+- Sözdizimi hataları
+- Eksik parantezler
+- Geçersiz ifadeler
+- Desteklenmeyen anahtar kelimeler
+- Eksik noktalı virgülle
+
